@@ -624,7 +624,6 @@ svg path {
 /* RESPONSIVE LAYOUTS: LAPTOP */
 @media (max-width: 1600px) {
   body {
-    background-color: red !important;
     height: 550vh;
   }
 
@@ -665,7 +664,7 @@ svg path {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     letter-spacing: 0em;
     text-transform: uppercase;
   }
