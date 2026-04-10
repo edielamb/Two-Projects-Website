@@ -221,6 +221,7 @@ svg path {
   display: block;
   max-width: 100%;
   height: auto;
+  will-change: transform;
 }
 
 /* REDACTION BARS */

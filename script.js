@@ -38,6 +38,21 @@ window.onload = () => {
   const maxDistance = Math.max(window.innerWidth, window.innerHeight) / 2;
   const startPositions = [];
 
+  // smooth scroll nav bar
+  document.querySelectorAll(".side-link").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const target = link.getAttribute("href");
+
+      gsap.to(window, {
+        duration: 1.5,
+        scrollTo: target,
+        ease: "power2.inOut",
+      });
+    });
+  });
+
   // INTRO ANIMATION //
 
   elements.forEach((target, index) => {
@@ -280,7 +295,7 @@ window.onload = () => {
       ease: "power2.out",
       duration: 1,
     },
-    "-=0.6",
+    "-=0.75",
   );
 
   // download menu scroll up from void
