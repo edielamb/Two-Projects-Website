@@ -186,7 +186,7 @@ window.onload = () => {
           end: "bottom top",
           scrub: 1,
         },
-        y: -120,
+        y: -130,
       });
     });
 
@@ -197,7 +197,7 @@ window.onload = () => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: img,
-          start: "top 93%",
+          start: "top 98%",
           end: "bottom 5%",
           scrub: true,
         },
@@ -218,7 +218,7 @@ window.onload = () => {
           end: "bottom top",
           scrub: 1,
         },
-        y: 50,
+        y: 80,
       });
     });
 
@@ -228,7 +228,7 @@ window.onload = () => {
         scrollTrigger: {
           trigger: img,
           start: "top 80%",
-          end: "bottom 10%",
+          end: "bottom 5%",
           scrub: true,
         },
       });
