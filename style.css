@@ -23,48 +23,49 @@ body {
 
 body {
   height: 635vh;
+  background-color: transparent;
 }
 .sticky-nav {
   position: fixed;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  background-color: #242526;
+  top: 0;
+  height: 80vh;
+  width: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
+  justify-content: space-between;
+  padding: 10vh 0;
   z-index: 1000;
-}
-
-.nav-header {
-  color: #fbfcf8;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 40px;
+  background: transparent;
+  pointer-events: none;
+  mix-blend-mode: difference;
 }
 
 .nav-links-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
+  align-items: center;
 }
 
 .side-link {
-  color: #fbfcf8;
+  pointer-events: auto;
+  color: #ffffff;
+
   text-decoration: none;
   font-size: 0.7rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
-  transition: transform 0.3s ease;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
 }
 
 .side-link:hover {
-  opacity: 1;
-  transform: rotate(180deg) translateX(3px);
+  opacity: 0.4;
 }
+
 /* INTRO, HEADERS & GRID BACKGROUND */
 .pinned-intro {
   width: 100%;
